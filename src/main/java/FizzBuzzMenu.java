@@ -45,7 +45,7 @@ public class FizzBuzzMenu
                 case 3:
                     for (int j = 1; j < 101; j++)
                     {
-                        if (j%5 == 0 & j%3 ==0)
+                        if (j%5 == 0 || j%3 ==0)
                         {
                             System.out.print(j + " ");
                         }
