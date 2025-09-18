@@ -12,11 +12,11 @@ public class FizzBuzzMenu
         while (run)
         {
             // Display menu
-            System.out.println("----FizzBuzz Menu----");
+            System.out.println("\n\n----FizzBuzz Menu----");
 
             // Output options
-            System.out.println("1. Fizz (Multiples of 5)");
-            System.out.println("2. Buzz (Multiples of 3)");
+            System.out.println("1. Buzz (Multiples of 3)");
+            System.out.println("2. Fizz (Multiples of 5)");
             System.out.println("3. FizzBuzz (Multiples of 3 and 5)");
             System.out.println("4. Exit");
 
@@ -26,24 +26,24 @@ public class FizzBuzzMenu
 
             switch (choice) {
                 case 1:
-                    for (int j = 0; j < 101; j++) {
-                        if (j % 5 == 0) ;
-                        {
-                            System.out.print(j + " ");
-                        }
-                        j++;
-                    }
-                    break;
-                case 2:
-                    for (int j = 0; j < 101; j++) {
+                    for (int j = 1; j < 101; j++) {
                         if (j % 3 == 0) {
                             System.out.print(j + " ");
                         }
                         j++;
                     }
                     break;
+                case 2:
+                    for (int j = 1; j < 101; j++) {
+                        if (j % 5 == 0)
+                        {
+                            System.out.print(j + " ");
+                        }
+                        j++;
+                    }
+                    break;
                 case 3:
-                    for (int j = 0; j < 101; j++)
+                    for (int j = 1; j < 101; j++)
                     {
                         if (j%5 == 0 & j%3 ==0)
                         {
@@ -60,29 +60,3 @@ public class FizzBuzzMenu
         }
     }
 }
-
-/*
-    public static void main(String[] args) {
-        for(int j=1;j<101;j++)
-        {
-            if(j%3==0)
-            {
-                System.out.println ("Fizz");
-            }
-            if(j%5==0)
-            {
-                System.out.println ("Buzz");
-            }
-            if(j%5 ==0 & j%3==0)
-            {
-                System.out.println ("FizzBuzz");
-            }
-            if(j%5 !=0 & j%3 != 0)
-            {
-                System.out.println (j);
-            }
-        }
-    }
-}
-
- */
